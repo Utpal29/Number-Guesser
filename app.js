@@ -64,6 +64,7 @@ UIguessBtn.addEventListener('click', function () {
 function gameOver(won, msg) {
     let color;
     won === true ? color = 'green' : color = 'red';
+    won === true ? document.body.style.background = 'rgba(40, 134, 21,0.5)' : document.body.style.background = 'rgba(236, 69, 69, 0.5)';
 
     // Disable input
     UIguessInput.disabled = true;
