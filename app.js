@@ -44,6 +44,8 @@ UIguessBtn.addEventListener('click', function () {
             if (guessesLeft === 0) {
                 // Game over - lost
                 gameOver(false, `Game Over, you lost. The correct number was ${winningNum} `);
+            } else if(guessesLeft === -1){
+                gameOver(false, ``);
             } else {
                 // Game contimues - answer wrong
 
